@@ -1,0 +1,14 @@
+create table funcionario(
+	CD_FUNCIONARIO int identity(1,1) not null,
+	NM_FUNCIONARIO varchar(50) not null,
+	DT_ADMISSAO date,
+	DS_SEXO char(1),
+	VL_SALARIO numeric(18,2),
+	constraint PK_FUNCIONARIO primary key(CD_FUNCIONARIO),
+	constraint CHEQUE_SEXO CHECK(DS_SEXO in ('F', 'M'))
+)
+
+//Constraint é uma forma de adicionar regras quando criamos bancos de dados, a linha 7 é para adicionar um nome para a chave primaria
+//Especificando qual é a linha que vai ser nossa chave primária.
+
+//A linha 8 significa uma regra, podendo especificar quais valores podem ser digitados dentro da coluna Sexo, podendo ser apenas F ou M

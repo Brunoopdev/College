@@ -12,3 +12,15 @@ create table funcionario(
 //Especificando qual é a linha que vai ser nossa chave primária.
 
 //A linha 8 significa uma regra, podendo especificar quais valores podem ser digitados dentro da coluna Sexo, podendo ser apenas F ou M
+
+
+insert into funcionario VALUES(
+	'Bruno Oliveira',
+	'15/03/2023',
+	'M',
+	1500
+)
+
+select * from funcionario;
+
+// Insere o valor dentro da tabela funcionario e mostra a tabela na integra -> Podemos usar também o """sp_help""" que mostra as especificações
